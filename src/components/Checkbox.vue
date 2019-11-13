@@ -5,6 +5,14 @@
       <el-main>
         <el-checkbox v-model="checked">备选项</el-checkbox>
       </el-main>
+      <el-header>多选(最少1个,最多2个)</el-header>
+      <el-main>
+        <el-checkbox-group v-model="normal" :max="2" :min="1">
+          <el-checkbox label="1"></el-checkbox>
+          <el-checkbox label="2"></el-checkbox>
+          <el-checkbox label="3"></el-checkbox>
+        </el-checkbox-group>
+      </el-main>
     </section>
     <section>
       <el-header>禁用状态</el-header>
@@ -46,6 +54,7 @@ const cityOptions = ["上海", "北京", "广州", "深圳"];
 export default {
   data() {
     return {
+      normal: ["1"],
       checked: true,
       checked1: true,
       checked2: false,
@@ -74,5 +83,8 @@ export default {
 <style  scoped>
 section {
   margin-bottom: 40px;
+}
+.el-main {
+  background-color: rgb(247, 239, 239);
 }
 </style>

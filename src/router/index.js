@@ -7,6 +7,7 @@ import Container from '../components/Container'
 import Icon from '../components/Icon'
 import Radio from '../components/Radio'
 import Checkbox from '../components/Checkbox'
+import Input from '../components/Input'
 
 Vue.use(VueRouter)
 
@@ -20,6 +21,7 @@ let children = [
     { path: "/icon", component: Icon, name: "Icon" },
     { path: "/radio", component: Radio, name: "Radio" },
     { path: "/checkbox", component: Checkbox, name: "Checkbox" },
+    { path: "/input", component: Input, name: "Input" },
 ]
 
 let list = [{
@@ -32,7 +34,7 @@ let list = [{
     },
     {
         title: "Form",
-        l: 2
+        l: 3
     },
 
 ]

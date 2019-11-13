@@ -154,6 +154,8 @@ html {
 .el-table .success-row {
     background: #f0f9eb;
 }
-body{
+
+body {
     overflow: hidden;
+    min-width: 870px;
 }

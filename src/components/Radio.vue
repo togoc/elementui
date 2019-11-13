@@ -90,4 +90,7 @@ export default {
 section {
   margin-bottom: 40px;
 }
+.el-main {
+  background-color: rgb(247, 239, 239);
+}
 </style>
