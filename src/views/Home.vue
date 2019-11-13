@@ -31,8 +31,8 @@
         </el-menu>
       </el-aside>
 
-      <el-container>
-        <el-main>
+      <el-container class="container-shell">
+        <el-main class="right-container">
           <router-view></router-view>
         </el-main>
       </el-container>
@@ -88,5 +88,12 @@ export default {
 }
 .el-container {
   height: 100vh;
+}
+.right-container {
+  border: 1px solid #eef1f6;
+}
+.container-shell {
+  padding: 10px;
+  padding-bottom: 70px !important;
 }
 </style>

@@ -5,6 +5,8 @@ import Transition from '../components/Transition'
 import Layout from '../components/Layout'
 import Container from '../components/Container'
 import Icon from '../components/Icon'
+import Radio from '../components/Radio'
+import Checkbox from '../components/Checkbox'
 
 Vue.use(VueRouter)
 
@@ -16,6 +18,8 @@ let children = [
     { path: "/layout", component: Layout, name: "Layout" },
     { path: "/container", component: Container, name: "Container" },
     { path: "/icon", component: Icon, name: "Icon" },
+    { path: "/radio", component: Radio, name: "Radio" },
+    { path: "/checkbox", component: Checkbox, name: "Checkbox" },
 ]
 
 let list = [{
@@ -25,6 +29,10 @@ let list = [{
     {
         title: "Basic",
         l: 3
+    },
+    {
+        title: "Form",
+        l: 2
     },
 
 ]
