@@ -1,16 +1,19 @@
 
 <template>
   <div class="home">
-    <el-header style="text-align: right; font-size: 12px">
-      <el-dropdown>
-        <i class="el-icon-setting" style="margin-right: 15px"></i>
-        <el-dropdown-menu slot="dropdown">
-          <el-dropdown-item>查看</el-dropdown-item>
-          <el-dropdown-item>新增</el-dropdown-item>
-          <el-dropdown-item>删除</el-dropdown-item>
-        </el-dropdown-menu>
-      </el-dropdown>
-      <span>王大虎</span>
+    <el-header style="text-align: center;font-size: 12px">
+      <div class="title">{{route[1].toUpperCase()+route.slice(2)}}</div>
+      <div class="right">
+        <el-dropdown>
+          <i class="el-icon-setting" style="margin-right: 15px"></i>
+          <el-dropdown-menu slot="dropdown">
+            <el-dropdown-item>查看</el-dropdown-item>
+            <el-dropdown-item>新增</el-dropdown-item>
+            <el-dropdown-item>删除</el-dropdown-item>
+          </el-dropdown-menu>
+        </el-dropdown>
+        <span>王大虎</span>
+      </div>
     </el-header>
     <el-container style="height: 100%; border: 1px solid #eee">
       <el-aside class="as" width="200px" style="background-color: rgb(238, 241, 246)">
@@ -55,6 +58,16 @@ export default {
 </script>
 
 <style>
+.title {
+  font-weight: bold;
+  font-size: 16px;
+}
+.right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-right: 20px;
+}
 .home {
   box-sizing: border-box;
   overflow-y: hidden;
@@ -65,7 +78,7 @@ export default {
   line-height: 60px;
 }
 
-.el-aside {
+.as {
   color: #333;
   height: 100vh;
   padding-bottom: 70px;

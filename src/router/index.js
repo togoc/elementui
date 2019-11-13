@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Transition from '../components/Transition'
 import Layout from '../components/Layout'
 import Container from '../components/Container'
+import Icon from '../components/Icon'
 
 Vue.use(VueRouter)
 
@@ -13,16 +14,20 @@ let children = [
     { path: "/transition", component: Transition, name: "Transition" },
     // Basic
     { path: "/layout", component: Layout, name: "Layout" },
-    { path: "/container ", component: Container, name: "Container " },
+    { path: "/container", component: Container, name: "Container" },
+    { path: "/icon", component: Icon, name: "Icon" },
 ]
 
 let list = [{
-    l: 1,
-    title: "Transition"
-}, {
-    title: "Basic",
-    l: 2
-}, ]
+        l: 1,
+        title: "Transition"
+    },
+    {
+        title: "Basic",
+        l: 3
+    },
+
+]
 
 let l1 = 0
 list.forEach((item1, index) => {
@@ -41,10 +46,6 @@ list.forEach((item1, index) => {
 //储存给demoList
 localStorage.removeItem("list")
 localStorage.setItem("list", JSON.stringify(list))
-
-
-
-
 
 
 const routes = [{
