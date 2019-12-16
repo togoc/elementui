@@ -8,7 +8,7 @@ import Icon from '../components/Icon'
 import Radio from '../components/Radio'
 import Checkbox from '../components/Checkbox'
 import Input from '../components/Input'
-
+import NotFound from '../components/NotFound'
 Vue.use(VueRouter)
 
 
@@ -63,6 +63,9 @@ const routes = [{
     component: Home,
     redirect: "/layout",
     children
+},{
+    path:'*',
+    component:NotFound,
 }]
 
 const router = new VueRouter({
